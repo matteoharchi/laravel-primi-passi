@@ -1,8 +1,7 @@
-@include ('partials.header')
+@extends('template.app')
 
-    <main>
-
-
-    </main>
-</body>
-</html>
+@section('main')
+<div class="home-container">
+    
+</div>
+@endsection

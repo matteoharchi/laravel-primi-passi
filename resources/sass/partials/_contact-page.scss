@@ -1,0 +1,31 @@
+.container-contacts{
+    margin: 20px 30px;
+    color:oldlace;
+    .contatti{
+        margin-bottom: 30px;
+        p{
+            margin-bottom: 10px;
+        }
+        
+    }
+    form{
+        
+        #emailArea,#textArea{
+            line-height: 40px;
+            font-size: 20px;
+            
+        }
+        #emailArea{
+            width: 300px;
+            margin-bottom: 30px;
+        }
+        #textArea{
+            width: 1200px;
+        }
+        #send{
+            margin-top: 20px;
+            width: 100px;
+            margin-left: calc(1200px - 100px);
+        }
+    }
+}

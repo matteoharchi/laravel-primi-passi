@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: cornsilk;
+  background-color: white;
   text-align: center;
 }
 
@@ -27,31 +27,121 @@ header nav ul li a {
   text-decoration: none;
 }
 
-.container {
-  margin: 40px;
+.home-container {
+  height: 1000px;
+  width: 100%;
+  background-image: url("https://www.lamolisana.it/wp-content/uploads/2018/09/adv-grano-slide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-container {
+  margin: 80px;
   color: oldlace;
 }
 
 .contain {
+  color: oldlace;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
-.contain .card {
-  margin: 20px 50px;
+.contain .product-card {
+  margin: 20px 80px;
+}
+
+.contain .product-card .image {
+  height: 240px;
+  width: 400px;
+  position: relative;
+}
+
+.contain .product-card .image img {
+  width: 400px;
+}
+
+.contain .product-card .image .product-hover {
+  position: absolute;
+  border: 5px solid white;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  display: none;
+}
+
+.contain .product-card .image:hover .product-hover {
+  display: block;
+  cursor: pointer;
 }
 
 .contain h2 {
   margin: 20px;
 }
 
-.contain img {
-  width: 400px;
+.container-contacts {
+  margin: 20px 30px;
+  color: oldlace;
 }
 
-.contain img:hover {
-  border: 3px solid white;
-  cursor: pointer;
+.container-contacts .contatti {
+  margin-bottom: 30px;
+}
+
+.container-contacts .contatti p {
+  margin-bottom: 10px;
+}
+
+.container-contacts form #emailArea,
+.container-contacts form #textArea {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.container-contacts form #emailArea {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.container-contacts form #textArea {
+  width: 1200px;
+}
+
+.container-contacts form #send {
+  margin-top: 20px;
+  width: 100px;
+  margin-left: calc(1200px - 100px);
+}
+
+footer {
+  background-color: white;
+}
+
+footer .footer-list {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-list ul {
+  list-style-type: none;
+}
+
+footer .footer-list ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-list ul li a {
+  text-decoration: none;
+  color: #809fcb;
+}
+
+footer .footer-list h3 {
+  margin-bottom: 10px;
+}
+
+footer .mountain {
+  background-image: url("https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg");
+  height: 150px;
 }
 

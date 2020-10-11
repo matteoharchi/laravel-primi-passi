@@ -145,26 +145,32 @@ foreach ($cards as $card){
 
 
 @endphp
-
-    @include ('partials.header')
-    <main>
-        <div class="container">
+    @extends('template.app')
+    @section('main')
+        <div class="product-container">
             <h2>Le cortissime</h2>
             <div class="contain">
                 @foreach($cortissime as $cortissima)
-                <div class="card">
+                <div class="product-card">
                     <h3>{{$cortissima['titolo']}}</h3>
-                    <img src="{{$cortissima['src']}}" alt="">
-                </div> 
+                    <div class="image">
+                        <img src="{{$cortissima['src']}}" alt="">
+                        <div class="product-hover"></div>
+                    </div>
+                </div>
+
                 @endforeach
                 
             </div>
             <h2>Le corte</h2>
             <div class="contain">
                 @foreach($corte as $corta)
-                <div class="card">
+                <div class="product-card">
                     <h3>{{$corta['titolo']}}</h3>
-                    <img src="{{$corta['src']}}" alt="">
+                    <div class="image">
+                        <img src="{{$corta['src']}}" alt="">
+                        <div class="product-hover"></div>
+                    </div>
                 </div> 
                 @endforeach
 
@@ -172,16 +178,17 @@ foreach ($cards as $card){
             <h2>Le lunghe</h2>
             <div class="contain">
                 @foreach($lunghe as $lunga)
-                <div class="card">
+                <div class="product-card">
                     <h3>{{$lunga['titolo']}}</h3>
-                    <img src="{{$lunga['src']}}" alt="">
+                    <div class="image">
+                        <img src="{{$lunga['src']}}" alt="">
+                        <div class="product-hover"></div>
+                    </div>
                 </div> 
                 @endforeach
                 
             </div>
 
         </div>
-    </main>
-</body>
-</html>
+    @endsection
 
